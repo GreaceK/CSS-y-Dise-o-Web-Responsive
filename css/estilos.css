@@ -1,0 +1,281 @@
+@font-face {
+  font-family: "Dancing Script";
+  src: url("DancingScript-Regular.otf");
+}
+body{
+  font-family:"Dancing Script";
+  background-color: #02010a;
+  font-size: 20px;
+  max-width: 100%;
+
+}
+
+header{
+  background: #5b7989;
+  text-align: left;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+-moz-border-radius: 10px 10px 0px 0px;
+-webkit-border-radius: 10px 10px 0px 0px;
+padding: 10px;
+ }
+
+.item-r{
+  float:left;
+}
+
+nav {
+  padding-right:20px;
+  height: 100%;
+ }
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+li{
+  float: right;
+  display: block;
+  margin: 10px;
+  padding: 0px;
+  height: 100%;
+  font-size: 30px;
+  flex-direction: row-reverse;
+}
+
+ .Principal{
+  background: #82c3a6;
+  border: 2px;
+ padding: 30px;
+ color: black;
+ text-decoration: none;
+ display:block;
+ margin:0 auto;
+
+
+ }
+
+ #Paisaje{
+ -webkit-transition: all 1s ease-in-out;
+ -moz-transition: all 1s ease-in-out;
+ -o-transition: all 1s ease-in-out;
+ transition: all 1s ease-in-out;
+ }
+
+ #Paisaje:hover{
+ -webkit-transform: rotate(10deg);
+ -moz-transform: rotate(10deg);
+ -o-transform: rotate(10deg);
+ -ms-transform: rotate(10deg);
+ transform: rotate(10deg);
+ box-shadow:2px 2px 2px 2px #82c3a6;
+ border: 2px;
+ }
+
+ #Secundaria a{
+   color: #FFF;
+ }
+
+ #Secundaria {
+   display: flex;
+   background: #d5c75f;
+   flex-flow: row;
+   align-content: center;
+   justify-content: center;
+   padding: 20px;
+   text-align: center;
+   font-size: 30px;
+ }
+
+ #Secundaria img {
+   height: 300px;
+   margin: 10px;
+   box-shadow: 2px 2px 2px 2px #02010a
+ }
+
+
+ .contenedor{
+   background: #d5c75f;
+   border-color: black;
+ border:100%;
+ margin: auto;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content:space-between;
+ padding: 40px
+  }
+
+
+
+  #Retrato{
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  }
+
+  #Retrato:hover{
+  -webkit-transform: translate(20px, 5px);
+  -moz-transform: translate(20px, 5px);
+  -o-transform: translate(20px, 5px);
+  -ms-transform: translate(20px, 5px);
+  transform: translate(20px,5px);
+  box-shadow:2px 2px 2px 2px #82c3a6;
+  border: 2px;
+  }
+
+  #retrato1{
+    filter: blur(10px);
+    -webkit-filter:blur(10px;)
+    -moz-filter:blur(10px);
+    -ms-filter: blur(10px);
+    -o-filter: blur(10px);
+  }
+
+  #retrato2, #retrato4, #retrato6{
+    -webkit-filter: grayscale(90%);
+  -moz-filter: grayscale(90%);
+  -ms-filter: grayscale(90%);
+  -o-filter: grayscale(90%);
+  filter: grayscale(90%);
+  }
+
+  #retrato3{
+  -webkit-filter:sepia(90%);
+  -moz-filter: sepia(90%);
+  -ms-filter: sepia(90%);
+  -o-filter: sepia(90%);
+  filter: sepia(90%);
+  }
+
+  #paisaje1{
+    filter: blur(10px);
+    -webkit-filter:blur(10px;)
+    -moz-filter:blur(10px);
+    -ms-filter: blur(10px);
+    -o-filter: blur(10px);
+  }
+
+  #paisaje2, #paisaje4, #paisaje6{
+    -webkit-filter: grayscale(90%);
+  -moz-filter: grayscale(90%);
+  -ms-filter: grayscale(90%);
+  -o-filter: grayscale(90%);
+  filter: grayscale(90%);
+  }
+
+  #paisaje3{
+  -webkit-filter:sepia(90%);
+  -moz-filter: sepia(90%);
+  -ms-filter: sepia(90%);
+  -o-filter: sepia(90%);
+  filter: sepia(90%);
+ }
+
+  footer{
+  background: #c6d5c5;
+  color: black;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  }
+
+  #contenido{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+   }
+
+   section{
+   flex: none;
+   margin: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+
+
+   @media (max-width:900px) {
+     header > item-r{
+         position: relative;
+         display: block;
+         width: 100%;
+         text-align: center;
+     }
+     header {
+         text-align: center;
+     }
+
+     header a{
+         font-size: 25px;
+     }
+
+     #Secundaria{
+       flex-flow: column;
+       align-content: center;
+       justify-content: center;
+       align-items: center;
+
+     }
+
+     #Secundaria a {
+         font-size: 25px;
+     }
+     #Secundaria figure {
+         text-align: center;
+     }
+
+     #Secundaria> figure > img{
+         width: 200px;
+     }
+     #secundaria >img{
+       flex-flow: column;
+       align-content: center;
+       justify-content: center;
+       align-items: center;
+      }
+
+     .contenedor{
+         flex-flow: column;
+         align-content: center;
+         justify-content: center;
+         align-items: center;
+     }
+     .contenedor >img {
+
+       width: 250px;
+ }
+     footer{
+         flex-flow: column;
+         justify-content: flex-start;
+     }
+
+
+
+							@keyframes slide {
+								0% {
+									margin-top: 150%;
+									}
+								60% {
+									margin-top: -5%;
+									}
+								100% {
+									margin-top: 0%;
+									}
+								}
+								body {
+									-webkit-animation: slide 2s;
+									-moz-animation: slide 2s;
+									-o-animation: slide 2s;
+									animation: slide 2s;
+								}
